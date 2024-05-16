@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #bef1ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pokemon.EntrenadoresController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Button fx:id="botonMenu" layoutX="734.0" layoutY="23.0" mnemonicParsing="false" onAction="#menu" text="Menú" />
+      <ChoiceBox fx:id="entrenadores" layoutX="326.0" layoutY="48.0" prefWidth="150.0" />
+      <ImageView fx:id="img" fitHeight="280.0" fitWidth="336.0" layoutX="272.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="240.0" layoutY="27.0" text="SELECCIONA EL ENTRENADOR CON EL QUE QUIERES JUGAR">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Label>
+      <Label fx:id="lbl" layoutX="576.0" layoutY="160.0">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Label>
+      <Button fx:id="eprsonalizado" layoutX="306.0" layoutY="547.0" mnemonicParsing="false" text="ENTRENADOR PERSONALIZADO" />
+      <TextArea fx:id="lblLogs" editable="false" layoutX="67.0" layoutY="580.0" prefHeight="102.0" prefWidth="683.0" wrapText="true" />
+      <Button fx:id="random" layoutX="327.0" layoutY="512.0" mnemonicParsing="false" text="ENTRENADOR RANDOM" />
+   </children>
+</Pane>
