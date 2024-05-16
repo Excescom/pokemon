@@ -16,6 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+
 public class BaseDatosController {
     
     
@@ -51,13 +52,14 @@ public class BaseDatosController {
     Singleton sin = Singleton.getInstancia();
     Consultas consultas = new Consultas();
     @FXML
-    private void initialize()
+    private void initialize() 
     //método que es llamado internamente justo después del constructor
     //En el constructor NO SE tiene acceso a las variables enlazadas con @FXML
     //En initialize() ya están las variables creadas y son accesibles
             
     {
         sin.Singelton();
+        
     }
      
     

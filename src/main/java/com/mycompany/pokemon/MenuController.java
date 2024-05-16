@@ -121,11 +121,13 @@ public class MenuController {
     }
     
     @FXML
-    private void juego()
+    private void juego() throws SQLException
         
     {
+        sin.setdif("recluta");
         sin.setLogs("moviendose al juego");
         try {
+                sin.setEquipoEntrenadores();
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("juego.fxml"));
 

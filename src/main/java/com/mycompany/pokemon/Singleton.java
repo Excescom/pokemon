@@ -36,12 +36,11 @@ public class Singleton
    private Pokemon equipo[] = new Pokemon [6];
    private Pokemon tux;
    
-   void Singelton() throws SQLException
+   void Singelton()
    {
        logs = "Iniciando logs";
-       dif = "recluta";
-       entrenadorID = 1;
-       setEquipoEntrenadores();
+       
+       entrenadorID = 1; 
    }
    
    public Pokemon getTux()
