@@ -10,49 +10,55 @@ package com.mycompany.pokemon;
  * @author danie
  */
 public class Pokemon {
-    private String nombre;
-    private int id;
-    private int nivel;
-    private int tipo;
-    private double vida;
-    private double ataque;
-    private double ataqueS;
-    private double defensa;
-    private double defensaS;
-    private double velocidad;
-    private double[][] tablaT;
+    protected String nombre;
+    protected String dif;
+    protected int id;
+    protected int nivel;
+    protected int tipo;
+    protected double vidaTotal;
+    protected double vida;
+    protected double ataque;
+    protected double ataqueS;
+    protected double defensa;
+    protected double defensaS;
+    protected double velocidad;
+    protected double[][] tablaT;
     
-    
+    Pokemon()
+    {
+      tablaT = TablaTipos();  
+    }
     
     //nombre = n, vida = v, ataque = a, ataque especial = as, defensa = d, defensa especial = ds, velocidad = vel, tipo = t y dificultad = dificultad
     Pokemon(String n, int i, double v, double a, double as, double d, double ds, double vel , int t, String dificultad)
     { 
         tablaT = TablaTipos();
-        
+        dif = dificultad;
         
         int bas = 0;
         if(n != "tux")
         {
             nombre = n;
-            if(dificultad == "pesadilla")
+            if(dif == "pesadilla")
             {
                 bas = 1;
             }
-            else if(dificultad == "veterano")
+            else if(dif == "veterano")
             {
                bas = 25;
             }
-            else if(dificultad == "marine") 
+            else if(dif == "marine") 
             {
                 bas = 50;
             }
-            else if (dificultad == "recluta")
+            else if (dif == "recluta")
             {
                bas = 75;
             }
             
             nivel = (int) ( Math.random() * 25 + bas);
             vida = v + (Math.random() * 25 + bas);
+            vidaTotal= vida;
             ataque = a + (Math.random() * 25 + bas);
             ataqueS = as + (Math.random() * 25 + bas);
             defensa = d + (Math.random() * 25 + bas);
@@ -61,11 +67,7 @@ public class Pokemon {
             tipo = t;
             id = i;
         }
-        else
-        {
-            nombre =n;
-            setTux(dificultad);
-        }
+        
     }
     
     //todos los geters
@@ -81,6 +83,12 @@ public class Pokemon {
     public double getVida()
     {
         return vida;
+    }
+    
+     
+    public double getVidaTotal()
+    {
+        return vidaTotal;
     }
     
     public double getDefensa()
@@ -106,13 +114,13 @@ public class Pokemon {
     public double getataque( double d, int tipoD )
     {
         double valor = 85 + Math.random() * 115 ;    
-        return  0.01 * tablaT[tipo][tipoD] * 1 * valor * ((0.2 * nivel +1) * ataque / 25 * d + 2) ;
+        return  0.1 * tablaT[tipo][tipoD] * 1 * valor * (((0.2 * nivel +1) * ataque) / (25 * d) + 2) ;
     }
     
     public double getataqueS( double d, int tipoD )
     {
         double valor = 85 + Math.random() * 115 ;    
-         return  0.01 * tablaT[tipo][tipoD] * 1 * valor * ((0.2 * nivel +1) * ataqueS / 25 * d + 2) ;
+         return  0.1 * tablaT[tipo][tipoD] * 1 * valor * ((0.2 * nivel +1) * ataqueS * ataqueS / (25 * d + 2)) ;
     }
     //d es daño
     public void quitarvida (double d)
@@ -120,53 +128,6 @@ public class Pokemon {
         vida = vida - d;
     }
     
-    
-
-    
-    private void setTux(String dificultad)
-    {
-        if(dificultad == "pesadilla")
-        {
-            nivel = 100;
-            vida =444;
-            ataque = 372;
-            ataqueS = 372;
-            defensa = 372;
-            defensaS = 372;
-            velocidad = 372;
-            
-        }
-        else if(dificultad == "veterano")
-        {
-            nivel = 75;
-            vida =350;
-            ataque = 220;
-            ataqueS = 220;
-            defensa = 220;
-            defensaS = 220;
-            velocidad = 220;
-        }
-        else if(dificultad == "marine")
-        {
-            nivel = 50;
-            vida =227;
-            ataque = 189;
-            ataqueS = 189;
-            defensa = 189;
-            defensaS = 189;
-            velocidad = 189;
-        }
-        else if (dificultad == "recluta")
-        {
-            nivel = 25;
-            vida =180;
-            ataque = 112;
-            ataqueS = 112;
-            defensa = 112;
-            defensaS = 112;
-            velocidad = 112;
-        }
-    }
     
     private double[][] TablaTipos()
     {

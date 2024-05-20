@@ -25,6 +25,12 @@ public class EntrenadoresController {
     private Button botonMenu;
     
     @FXML
+    private Button personalizado;
+    
+    @FXML
+    private Button random;
+    
+    @FXML
     private ImageView img;
     
      @FXML
@@ -70,8 +76,6 @@ public class EntrenadoresController {
                 }
  
         entrenadores.getItems().addAll(entrenador); 
-        
-       
 
         entrenadores.getSelectionModel().selectedItemProperty().addListener(
             new ChangeListener<String>() {
@@ -81,7 +85,7 @@ public class EntrenadoresController {
                     try 
                     {
                         // Llama al método que deseas ejecutar cuando se selecciona un elemento en el ChoiceBox
-                        mostrar();
+                        mostrar(entrenadores.getValue());
                         String nombre = entrenadores.getValue();
                         List<Map<String, String>> info = consultas.PokemonNmobreEntrenador(entrenadores.getValue());
                         // Iterador para recorrer la lista
@@ -103,13 +107,9 @@ public class EntrenadoresController {
                         int id = consultas.EntrenadorId(entrenadores.getValue());
                         sin.setEntrenadorid(id);
                         
-                        sin.setEquipoEntrenadores();
                         sin.setLogs("llegao");
                     } 
-                    catch (Exception e) 
-                    {
-                        e.printStackTrace();
-                    }
+                     catch (Exception e) {System.out.println(e.getMessage());}
                 }
             }
         );
@@ -138,22 +138,88 @@ public class EntrenadoresController {
 
                 stageAcerrar.close();
 
-            } catch (IOException e) {}
+            }  catch (Exception e) {System.out.println(e.getMessage());}
         
     }
   
      @FXML
-    private void mostrar() throws SQLException
+    private void mostrar(String nombre) throws SQLException
     {
 
-        if (entrenadores.getValue() != null)
-        {   
-            sin.setLogs("entrenador " +entrenadores.getValue()+ " seleccionado");
-            sin.setEntrenadorid(consultas.EntrenadorId(entrenadores.getValue()));
+          
+            sin.setLogs("entrenador " +nombre+ " seleccionado");
+            sin.setEntrenadorid(consultas.EntrenadorId(nombre));
             lblLogs.setText(sin.getLogs());
-            String trainer = entrenadores.getValue();
+            String trainer = nombre;
             img.setImage(new Image("file:.//fotos//entrenadores//"+trainer+".png"));
-        }   
+          
 
     }
+     @FXML
+    private void aleatorio() throws SQLException
+    {
+        int entrenador = (int) (Math.random()*12 + 1);
+
+        try 
+        {
+            // Llama al método que deseas ejecutar cuando se selecciona un elemento en el ChoiceBox
+            String nombre = consultas.Entrenadornombre(entrenador);
+            mostrar(nombre);
+
+            
+            List<Map<String, String>> info = consultas.PokemonNmobreEntrenador(nombre);
+            // Iterador para recorrer la lista
+            int i = 1;
+            lbl.setText("");
+            for (Map<String, String> PokemonNmobreEntrenador : info) 
+            {
+                // Iterador para recorrer el mapa de información de cada pokemon
+                for (Map.Entry<String, String> entry : PokemonNmobreEntrenador.entrySet()) 
+                {
+                    String key = entry.getKey();
+                    String value = entry.getValue();
+                    // Aquí puedes hacer lo que necesites con la clave (key) y el valor (value)
+
+                    lbl.setText(lbl.getText() + "\n" + " " + key +" "+ i + " : " + value);
+                    i++;
+                }
+            }
+
+            sin.setEntrenadorid(entrenador);
+
+
+        } 
+         catch (Exception e) {System.out.println(e.getMessage());}
+    }
+    
+    
+    
+    @FXML
+    private void custom()
+        
+    {
+        try {
+                sin.setLogs("moviendose al Entrenador Custom");
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("EntrenadorCustom.fxml"));
+
+                Scene scene = new Scene(fxmlLoader.load());
+                Stage stage = new Stage();
+                stage.resizableProperty().setValue(false); //sin botón de restaurar/maximiza
+                stage.setTitle("Entrenador Custom");
+                sin.setLogs("moviendose al EntrenadorCustom");
+                stage.setScene(scene);
+                stage.show();
+
+                //cerramos la ventana actual buscando su referencia a través de algún 
+                //control 
+                Stage stageAcerrar = (Stage) botonMenu.getScene().getWindow();
+
+                stageAcerrar.close();
+
+            } catch (Exception e) {System.out.println(e.getMessage());}
+        
+    }
 }
+        
+    

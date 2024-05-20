@@ -124,10 +124,16 @@ public class MenuController {
     private void juego() throws SQLException
         
     {
-        sin.setdif("recluta");
         sin.setLogs("moviendose al juego");
         try {
+            if(sin.getentrenadorid() != 0)
+            {
                 sin.setEquipoEntrenadores();
+            }
+            
+            Tux p = sin.getTux();
+            
+  
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("juego.fxml"));
 

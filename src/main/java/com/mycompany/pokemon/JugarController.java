@@ -11,10 +11,15 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 public class JugarController {
     @FXML
     private Button botonMenu;
+    
+    @FXML
+    private ImageView tux;
     
     @FXML
     private ScrollPane logs;
@@ -30,7 +35,7 @@ public class JugarController {
     //En initialize() ya están las variables creadas y son accesibles
     {     
         logs = new ScrollPane();
-
+        tux.setImage(new Image("file:.//fotos//pokemones//tux.png"));
         String texto = sin.getLogs();
         lblLogs.setText(texto);
     }

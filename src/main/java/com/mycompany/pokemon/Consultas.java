@@ -171,10 +171,10 @@ public class Consultas {
       
         Connection con;
         con= DriverManager.getConnection(sin.getDatabase(),sin.getUsuario(),sin.getContrasenya());
-        ResultSet resul = con.createStatement().executeQuery("SELECT id_tipo FROM Tipo WHERE nombre_tipo = " + nombre);
+        ResultSet resul = con.createStatement().executeQuery("SELECT id_type FROM Types WHERE Type = " + "'" +nombre+"'");
         
         resul.next();
-        int resultado = resul.getInt("id_tipo");
+        int resultado = resul.getInt("id_type");
         con.close();
         return resultado;
   

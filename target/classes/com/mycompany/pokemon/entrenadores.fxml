@@ -25,8 +25,8 @@
          <font>
             <Font name="Comic Sans MS" size="12.0" />
          </font></Label>
-      <Button fx:id="eprsonalizado" layoutX="306.0" layoutY="547.0" mnemonicParsing="false" text="ENTRENADOR PERSONALIZADO" />
+      <Button fx:id="personalizado" layoutX="306.0" layoutY="547.0" mnemonicParsing="false" onAction="#custom" text="ENTRENADOR PERSONALIZADO" />
       <TextArea fx:id="lblLogs" editable="false" layoutX="67.0" layoutY="580.0" prefHeight="102.0" prefWidth="683.0" wrapText="true" />
-      <Button fx:id="random" layoutX="327.0" layoutY="512.0" mnemonicParsing="false" text="ENTRENADOR RANDOM" />
+      <Button fx:id="random" layoutX="327.0" layoutY="512.0" mnemonicParsing="false" onAction="#aleatorio" text="ENTRENADOR RANDOM" />
    </children>
 </Pane>
