@@ -131,7 +131,7 @@ public class MenuController {
                 sin.setEquipoEntrenadores();
             }
             
-            Tux p = sin.getTux();
+            
             
   
                 FXMLLoader fxmlLoader = new FXMLLoader();
@@ -151,7 +151,7 @@ public class MenuController {
 
                 stageAcerrar.close();
 
-            } catch (IOException e) {sin.setLogs("fallo al moverse al juego");}
+            } catch (Exception e) {System.out.println(e);}
  
     }
     

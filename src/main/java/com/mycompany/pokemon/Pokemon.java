@@ -32,12 +32,11 @@ public class Pokemon {
     //nombre = n, vida = v, ataque = a, ataque especial = as, defensa = d, defensa especial = ds, velocidad = vel, tipo = t y dificultad = dificultad
     Pokemon(String n, int i, double v, double a, double as, double d, double ds, double vel , int t, String dificultad)
     { 
-        tablaT = TablaTipos();
+        
         dif = dificultad;
         
         int bas = 0;
-        if(n != "tux")
-        {
+        
             nombre = n;
             if(dif == "pesadilla")
             {
@@ -56,17 +55,17 @@ public class Pokemon {
                bas = 75;
             }
             
-            nivel = (int) ( Math.random() * 25 + bas);
-            vida = v + (Math.random() * 25 + bas);
+            nivel =  (int) ( Math.random() * 25 + bas);
+            vida = v + (((int) Math.random() * 25 + bas));
             vidaTotal= vida;
-            ataque = a + (Math.random() * 25 + bas);
-            ataqueS = as + (Math.random() * 25 + bas);
-            defensa = d + (Math.random() * 25 + bas);
-            defensaS = ds + (Math.random() * 25 + bas);
-            velocidad = vel + (Math.random() * 25 + bas);
+            ataque = a + (((int) (Math.random() * 25) + bas));
+            ataqueS = as + (((int) (Math.random() * 25) + bas));
+            defensa = d + (((int) (Math.random() * 25) + bas));
+            defensaS = ds + (((int) (Math.random() * 25) + bas));
+            velocidad = vel + (((int) (Math.random() * 25) + bas));
             tipo = t;
             id = i;
-        }
+            tablaT = TablaTipos();
         
     }
     
@@ -78,6 +77,16 @@ public class Pokemon {
     public int getNivel()
     {
         return nivel;
+    }
+    
+    public int getID()
+    {
+        return id;
+    }
+    
+    public int getTipo()
+    {
+        return tipo;
     }
     
     public double getVida()
@@ -111,16 +120,22 @@ public class Pokemon {
     //bon es la bonificación es el resultado de la tabla de tipos
     //la d es la defensa del pokemon rival
     
-    public double getataque( double d, int tipoD )
+    public double getAtaque( double d, int tipoD )
     {
-        double valor = 85 + Math.random() * 115 ;    
-        return  0.1 * tablaT[tipo][tipoD] * 1 * valor * (((0.2 * nivel +1) * ataque) / (25 * d) + 2) ;
+        double valor = 85 + Math.random() * 115 ;  
+        double daño = 0.04 * tablaT[tipo][tipoD] * 1 * valor * (((0.2 * nivel +1) * ataque) / (25 * d) + 2);
+        
+        return daño  ;
+        
     }
     
-    public double getataqueS( double d, int tipoD )
+    public double getAtaqueS( double d, int tipoD )
     {
-        double valor = 85 + Math.random() * 115 ;    
-         return  0.1 * tablaT[tipo][tipoD] * 1 * valor * ((0.2 * nivel +1) * ataqueS * ataqueS / (25 * d + 2)) ;
+        double valor = 85 + Math.random() * 115 ;   
+        double daño = 0.04 * tablaT[tipo][tipoD] * 1 * valor * (((0.2 * nivel +1) * ataqueS) / (25 * d) + 2);
+        System.out.println(daño); 
+        return  daño ;
+         
     }
     //d es daño
     public void quitarvida (double d)
