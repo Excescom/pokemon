@@ -129,9 +129,9 @@ public class JugarController {
         
     {
         try {
-                sin.setLogs("moviendose al menú");
+                sin.setLogs("FIN PARTIDA");
                 FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("menu.fxml"));
+                fxmlLoader.setLocation(getClass().getResource("finPartida.fxml"));
 
                 Scene scene = new Scene(fxmlLoader.load());
                 Stage stage = new Stage();
@@ -141,14 +141,15 @@ public class JugarController {
                 stage.setScene(scene);
                 stage.resizableProperty().setValue(false); //sin botón de restaurar/maximiza
                 stage.show();
-                
+
                 //cerramos la ventana actual buscando su referencia a través de algún 
                 //control 
-                Stage stageAcerrar = (Stage) botonMenu.getScene().getWindow();
-                
+                Stage stageAcerrar = (Stage) tuxmuertos.getScene().getWindow();
+
                 stageAcerrar.close();
 
-            } catch (IOException e) {}
+            } catch (IOException e) {System.out.println(e);}
+            
         
     }
     
