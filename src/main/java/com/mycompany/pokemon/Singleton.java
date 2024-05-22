@@ -35,19 +35,27 @@ public class Singleton
    private int entrenadorID;
    private String contrasenya;
    private Pokemon equipo[] = new Pokemon [6];
-   Tux tux;
+   private Tux tux;
+   private int cantidad;
+   private int tuxMuertos;
+   
    
    void Singelton()
    {
-       logs = "Iniciando logs";
-       
+       logs = "Iniciando logs";   
        dif = "recluta";
        entrenadorID = 1; 
+       
    }
    
    void initLogsJuego()
    {
        logsJuego= "Iniciando Logs de la partida";
+   }
+   
+   void initTuxMuertos()
+   {
+       tuxMuertos= 0;
    }
    
        
@@ -98,6 +106,7 @@ public class Singleton
         double defensaS = 0;
         double velocidad = 0;
         int tipo = 0;
+        
        
             try 
             {
@@ -149,10 +158,7 @@ public class Singleton
             {
                 e.printStackTrace();
             }
-          for(int i = 0; i<6;i++)   
-          {
-              System.out.println(equipo[i]);
-          }
+          
        }
    
     public void setEquipoCustom(int position, String name) throws SQLException
@@ -173,74 +179,41 @@ public class Singleton
         int tipo = 0;
        
         try 
+            {
+                List<Map<String, String>> info = consultas.PokemonIDEntrenador(entrenadorID);
+                // Iterador para recorrer la lista
+
+                for (Map<String, String> PokemonID : info) 
+                {
+                    // Iterador para recorrer el mapa de información de cada pokemon
+                    for (Map.Entry<String, String> entry : PokemonID.entrySet()) 
+                    {
+                        String key = entry.getKey();
+                        String value = entry.getValue();
+                        // Aquí puedes hacer lo que necesites con la clave (key) y el valor (value)
+                       
+                        try 
                         {
-                            
-                            String value = consultas.pokemonId(name);
                             int idPokemon = Integer.parseInt(value);
-                            List<Map<String, String>> info = consultas.PokemonCompleto(idPokemon);
                             List<Map<String, String>> infop = consultas.PokemonCompleto(idPokemon);
                             // Iterador para recorrer la lista
-                            for (Map<String, String> pokemonInfo : info) 
+                            for (Map<String, String> pokemonInfo : infop) 
                             {
+                                nombre = pokemonInfo.get("Pokemon");
+                                id = Integer.parseInt(pokemonInfo.get("ID_Pokemon"));
+                                vida =  Double.parseDouble(pokemonInfo.get("HP"));
+                                ataque = Double.parseDouble(pokemonInfo.get("Attack"));
+                                ataqueS = Double.parseDouble(pokemonInfo.get("Special_Attack"));
+                                defensa = Double.parseDouble(pokemonInfo.get("Defense"));
+                                defensaS = Double.parseDouble(pokemonInfo.get("Special_Defense"));
+                                velocidad = Double.parseDouble(pokemonInfo.get("Speed"));
+                                tipo =  consultas.TipoID(pokemonInfo.get("First_Type"));
+                                
+                                 equipo[f] = new Pokemon(nombre,id,vida,ataque,ataqueS,defensa,defensaS,velocidad,tipo,dif);   
+                                 f++;
                                 // Iterador para recorrer el mapa de información de cada pokemon
-                                for (Map.Entry<String, String> entryP : pokemonInfo.entrySet()) 
-                                {
-                                    String keyp = entryP.getKey();
-                                    String valuep = entryP.getValue();
-                                    // Aquí puedes hacer lo que necesites con la clave (key) y el valor (value)
-                                    //este es el orden para crear el pokemon
-                                    //String n, int i, double v, double a, double as, double d, double ds, double vel , int t, String dificultad
-                                    //nombre = n, vida = v, ataque = a, ataque especial = as, defensa = d, defensa especial = ds, velocidad = vel, tipo = t y dificultad = dificultad
-
-                                    if(keyp == "Pokemon")
-                                    {
-                                        nombre = valuep;
-                                    }
-                                    else if(keyp == "ID_Pokemon")
-                                    {
-                                        int numero = Integer.parseInt(valuep);
-                                        id = numero;
-                                    }
-                                    else if(keyp == "HP")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         vida = numero;
-                                    }
-                                    else if(keyp == "Attack")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         ataque = numero;
-                                    }
-                                    else if(keyp == "Special_Attack")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         ataqueS = numero;
-                                    }
-                                    else if(keyp == "Defense")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         defensa = numero;
-                                    }
-                                    else if(keyp == "Special_Defense")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         defensaS = numero;
-                                    }
-                                    else if(keyp == "Speed")
-                                    {
-                                         double numero = Double.parseDouble(valuep);
-                                         velocidad = numero;
-                                    }
-                                    else if(keyp == "First_Type")
-                                    {
-                                       int  numero = consultas.TipoID(valuep);
-                                       tipo = numero;
-                                    }
                                    
-                                }   
                             }
-                            equipo[f] = new Pokemon(nombre,id,vida,ataque,ataqueS,defensa,defensaS,velocidad,tipo,dif);   
-                            f++;
 
                         } 
                         catch (Exception e) 
@@ -248,17 +221,17 @@ public class Singleton
                             e.printStackTrace();
                         }
 
+                    }
+                }
+            } 
+            catch (Exception e) 
+            {
+                e.printStackTrace();
+            }
+
         
    }
-                       
 
-                    
-                
-             
-         
-       
-   
-   
    public void setDataBase(String d)
    {
        DataBase = d;
@@ -278,6 +251,28 @@ public class Singleton
    {
        return dif;
    }
+   
+   public void setCantidad(int d)
+   {
+       cantidad = d;
+   }
+   
+   public int getCantidad()
+   {
+       return cantidad;
+   }
+   
+    public void setTuxMuertos()
+   {
+       tuxMuertos = tuxMuertos +1;
+   }
+   
+   public int getTuxMuertos()
+   {
+       return tuxMuertos;
+   }
+   
+   
    
    public void setUsuario(String d)
    {
@@ -308,7 +303,7 @@ public class Singleton
    public void setLogsJuego(String d)
    {
        
-       logsJuego = logsJuego + " \n" + d;
+       logsJuego = d + " \n" + logsJuego;
    }
    
    

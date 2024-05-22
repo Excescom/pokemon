@@ -76,9 +76,9 @@ public class PokedexController {
                         // Llama al método que deseas ejecutar cuando se selecciona un elemento en el ChoiceBox
                         mostrar();
                         lbl.setText("");
-                        String numero = consultas.pokemonId(nombres.getValue());
-                        int numeroInt = Integer.parseInt(numero); 
-                        List<Map<String, String>> info = consultas.PokemonCompleto(numeroInt);
+                        String id = consultas.pokemonId(nombres.getValue());
+                        int idNum = Integer.parseInt(id); 
+                        List<Map<String, String>> info = consultas.PokemonCompleto(idNum);
                         
                         // Iterador para recorrer la lista
                         for (Map<String, String> pokemonInfo : info) {

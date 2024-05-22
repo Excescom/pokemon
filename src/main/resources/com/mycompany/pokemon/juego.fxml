@@ -16,16 +16,20 @@
       <TextArea fx:id="lblLogs" editable="false" layoutX="67.0" layoutY="580.0" prefHeight="102.0" prefWidth="683.0" wrapText="true" />
       <ImageView fx:id="tux" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="pokemon1" fitHeight="180.0" fitWidth="250.0" layoutX="269.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon2" fitHeight="87.0" fitWidth="130.0" layoutX="75.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon3" fitHeight="87.0" fitWidth="130.0" layoutX="205.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon4" fitHeight="87.0" fitWidth="130.0" layoutX="335.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon5" fitHeight="87.0" fitWidth="130.0" layoutX="465.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon6" fitHeight="87.0" fitWidth="130.0" layoutX="595.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon2" fitHeight="87.0" fitWidth="130.0" layoutX="75.0" layoutY="483.0" onMouseClicked="#cambiarPokemon1" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon3" fitHeight="87.0" fitWidth="130.0" layoutX="205.0" layoutY="483.0" onMouseClicked="#cambiarPokemon2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon4" fitHeight="87.0" fitWidth="130.0" layoutX="335.0" layoutY="483.0" onMouseClicked="#cambiarPokemon3" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon5" fitHeight="87.0" fitWidth="130.0" layoutX="465.0" layoutY="483.0" onMouseClicked="#cambiarPokemon4" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon6" fitHeight="87.0" fitWidth="130.0" layoutX="595.0" layoutY="483.0" onMouseClicked="#cambiarPokemon5" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="ataque" disable="true" layoutX="269.0" layoutY="216.0" mnemonicParsing="false" onAction="#ataque" text="ATAQUE" />
       <Button fx:id="ataqueS" disable="true" layoutX="408.0" layoutY="216.0" mnemonicParsing="false" onAction="#ataqueS" text="ATAQUE ESPECIAL" />
       <Label fx:id="vida" layoutX="300.0" layoutY="428.0" text="Label" />
       <Label layoutX="269.0" layoutY="428.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
       <Label fx:id="vidaTux" layoutX="317.0" layoutY="178.0" text="Label" />
       <Label layoutX="286.0" layoutY="178.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
+      <Label fx:id="datosPokemon" layoutX="516.0" layoutY="261.0" text="Label" />
+      <Label fx:id="datosTux" layoutX="516.0" layoutY="27.0" text="Label" />
+      <Label fx:id="tuxmuertos" layoutX="93.0" layoutY="95.0" />
+      <Label layoutX="46.0" layoutY="63.0" text="CANTIDAD TUX MUERTOS" />
    </children>
 </Pane>
