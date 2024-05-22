@@ -7,17 +7,96 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane fx:id="img1" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: #bef1ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pokemon.EntrenadorCustomController">
+<Pane fx:id="img1" prefHeight="700.0" prefWidth="822.0" style="-fx-background-color: #bef1ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pokemon.EntrenadorCustomController">
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
    <children>
       <TextArea fx:id="lblLogs" editable="false" layoutX="67.0" layoutY="580.0" prefHeight="102.0" prefWidth="683.0" wrapText="true" />
       <Button fx:id="botonMenu" layoutX="724.0" layoutY="22.0" mnemonicParsing="false" onAction="#menu" text="Menú" />
-      <ChoiceBox fx:id="pokemon1" layoutX="59.0" layoutY="47.0" prefWidth="150.0" />
-      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="72.0" onDragDetected="#mostrar" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="lbl" layoutX="234.0" layoutY="72.0" text="Label" />
-      <Label layoutX="100.0" layoutY="26.0" text="POKEMON 1" />
+      <Button fx:id="guardar" layoutX="465.0" layoutY="482.0" mnemonicParsing="false" onAction="#seleccionar" prefHeight="63.0" prefWidth="131.0" text="GUARDAR">
+         <font>
+            <Font name="Comic Sans MS" size="21.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="pokemon1" layoutX="22.0" layoutY="59.0" prefWidth="150.0" />
+      <ImageView fx:id="img" fitHeight="155.0" fitWidth="166.0" layoutX="14.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl" layoutX="180.0" layoutY="84.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pokemon2" layoutX="295.0" layoutY="59.0" prefWidth="150.0" />
+      <ImageView fx:id="img2" fitHeight="155.0" fitWidth="166.0" layoutX="287.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl2" layoutX="453.0" layoutY="84.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pokemon3" layoutX="558.0" layoutY="59.0" prefWidth="150.0" />
+      <ImageView fx:id="img3" fitHeight="155.0" fitWidth="166.0" layoutX="550.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl3" layoutX="716.0" layoutY="84.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pokemon4" layoutX="21.0" layoutY="260.0" prefWidth="150.0" />
+      <ImageView fx:id="img4" fitHeight="155.0" fitWidth="166.0" layoutX="13.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl4" layoutX="179.0" layoutY="285.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pokemon5" layoutX="294.0" layoutY="260.0" prefWidth="150.0" />
+      <ImageView fx:id="img5" fitHeight="155.0" fitWidth="166.0" layoutX="286.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl5" layoutX="452.0" layoutY="285.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="pokemon6" layoutX="557.0" layoutY="260.0" prefWidth="150.0" />
+      <ImageView fx:id="img6" fitHeight="155.0" fitWidth="166.0" layoutX="549.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lbl6" layoutX="715.0" layoutY="285.0">
+         <font>
+            <Font name="Comic Sans MS" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="39.0" text="POKEMON 1">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="39.0" text="POKEMON 2">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="39.0" text="POKEMON 3">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="239.0" text="POKEMON 4">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="239.0" text="POKEMON 5">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="239.0" text="POKEMON 6">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="guardar1" layoutX="270.0" layoutY="482.0" mnemonicParsing="false" onAction="#seleccionarRandom" prefHeight="63.0" prefWidth="131.0" text="RANDOM">
+         <font>
+            <Font name="Comic Sans MS" size="21.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

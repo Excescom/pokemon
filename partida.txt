@@ -1,0 +1,44 @@
+CANTIDAD DE TUX DERROTADOS = 0 
+FIN PARTIDA 
+Snorlax Ha muerto 
+Ataque Especial Tux Ha realizado: 16 puntos de daño 
+Snorlax Ataque Especial  Ha realizado: 13 puntos de daño 
+Tux Ha realizado: 41 puntos de daño 
+Snorlax Ataque Especial  Ha realizado: 11 puntos de daño 
+Tux Ha realizado: 27 puntos de daño 
+Snorlax Ataque Especial  Ha realizado: 14 puntos de daño 
+Ataque Especial Tux Ha realizado: 30 puntos de daño 
+Snorlax Ataque Especial  Ha realizado: 19 puntos de daño 
+Tux Ha realizado: 47 puntos de daño 
+Lapras Ha muerto 
+Ataque Especial Tux Ha realizado: 20 puntos de daño 
+Lapras Ataque Especial  Ha realizado: 22 puntos de daño 
+Ataque Especial Tux Ha realizado: 18 puntos de daño 
+Lapras Ataque Especial  Ha realizado: 27 puntos de daño 
+Ataque Especial Tux Ha realizado: 17 puntos de daño 
+Lapras Ataque Especial  Ha realizado: 19 puntos de daño 
+Ataque Especial Tux Ha realizado: 23 puntos de daño 
+Lapras Ataque Especial  Ha realizado: 19 puntos de daño 
+Tux Ha realizado: 28 puntos de daño 
+Lapras Ataque Especial  Ha realizado: 13 puntos de daño 
+Tux Ha realizado: 44 puntos de daño 
+Blastoise Ha muerto 
+Ataque Especial Tux Ha realizado: 23 puntos de daño 
+Blastoise Ataque Especial  Ha realizado: 14 puntos de daño 
+Ataque Especial Tux Ha realizado: 32 puntos de daño 
+Blastoise Ataque Especial  Ha realizado: 12 puntos de daño 
+Ataque Especial Tux Ha realizado: 27 puntos de daño 
+Charizard Ha muerto 
+Ataque Especial Tux Ha realizado: 45 puntos de daño 
+Charizard Ataque Especial  Ha realizado: 19 puntos de daño 
+Ataque Especial Tux Ha realizado: 58 puntos de daño 
+Venusaur Ha muerto 
+Ataque Especial Tux Ha realizado: 37 puntos de daño 
+Venusaur Ataque Especial  Ha realizado: 13 puntos de daño 
+Ataque Especial Tux Ha realizado: 35 puntos de daño 
+Venusaur Ataque Especial  Ha realizado: 23 puntos de daño 
+Tux Ha realizado: 21 puntos de daño 
+Pikachu Ha muerto 
+Ataque Especial Tux Ha realizado: 52 puntos de daño 
+Empieza el juego 
+Iniciando Logs de la partida

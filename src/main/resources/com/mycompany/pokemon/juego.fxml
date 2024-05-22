@@ -23,7 +23,7 @@
       <ImageView fx:id="pokemon6" fitHeight="87.0" fitWidth="130.0" layoutX="595.0" layoutY="483.0" onMouseClicked="#cambiarPokemon5" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="ataque" disable="true" layoutX="269.0" layoutY="216.0" mnemonicParsing="false" onAction="#ataque" text="ATAQUE" />
       <Button fx:id="ataqueS" disable="true" layoutX="408.0" layoutY="216.0" mnemonicParsing="false" onAction="#ataqueS" text="ATAQUE ESPECIAL" />
-      <Label fx:id="vida" layoutX="300.0" layoutY="428.0" text="Label" />
+      <Label fx:id="vidaP1" layoutX="300.0" layoutY="428.0" text="Label" />
       <Label layoutX="269.0" layoutY="428.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
       <Label fx:id="vidaTux" layoutX="317.0" layoutY="178.0" text="Label" />
       <Label layoutX="286.0" layoutY="178.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
@@ -31,5 +31,15 @@
       <Label fx:id="datosTux" layoutX="516.0" layoutY="27.0" text="Label" />
       <Label fx:id="tuxmuertos" layoutX="93.0" layoutY="95.0" />
       <Label layoutX="46.0" layoutY="63.0" text="CANTIDAD TUX MUERTOS" />
+      <Label fx:id="vidaP2" layoutX="106.0" layoutY="561.0" text="Label" />
+      <Label layoutX="75.0" layoutY="561.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
+      <Label fx:id="vidaP3" layoutX="236.0" layoutY="561.0" text="Label" />
+      <Label layoutX="205.0" layoutY="561.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
+      <Label fx:id="vidaP4" layoutX="376.0" layoutY="561.0" text="Label" />
+      <Label layoutX="345.0" layoutY="561.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
+      <Label fx:id="vidaP5" layoutX="496.0" layoutY="562.0" text="Label" />
+      <Label layoutX="465.0" layoutY="562.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
+      <Label fx:id="vidaP6" layoutX="626.0" layoutY="562.0" text="Label" />
+      <Label layoutX="595.0" layoutY="562.0" prefHeight="17.0" prefWidth="47.0" text="vida:" />
    </children>
 </Pane>

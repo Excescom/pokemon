@@ -133,7 +133,7 @@ public class Pokemon {
     {
         double valor = 85 + Math.random() * 115 ;   
         double daño = 0.04 * tablaT[tipo][tipoD] * 1 * valor * (((0.2 * nivel +1) * ataqueS) / (25 * d) + 2);
-        System.out.println(daño); 
+        
         return  daño ;
          
     }

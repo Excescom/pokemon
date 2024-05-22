@@ -130,9 +130,11 @@ public class MenuController {
             {
                 sin.setEquipoEntrenadores();
             }
-            
-            
-            
+            else
+            {
+                sin.setEquipoCustomCompleto();
+            }
+
   
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("juego.fxml"));

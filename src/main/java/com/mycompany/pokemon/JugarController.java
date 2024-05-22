@@ -28,7 +28,22 @@ public class JugarController {
     private Button ataqueS;
     
     @FXML
-    private Label vida;
+    private Label vidaP1;
+    
+    @FXML
+    private Label vidaP2;
+    
+    @FXML
+    private Label vidaP3;
+    
+    @FXML
+    private Label vidaP4;
+    
+    @FXML
+    private Label vidaP5;
+    
+    @FXML
+    private Label vidaP6;
     
     @FXML
     private Label tuxmuertos;
@@ -83,7 +98,7 @@ public class JugarController {
         sin.setTux(tux);
         String texto = sin.getLogs();
         lblLogs.setText(texto);
-        datos();
+        
         sin.initTuxMuertos();  
         String tuxm = Integer.toString(sin.getTuxMuertos());
         tuxmuertos.setText(tuxm);
@@ -94,10 +109,11 @@ public class JugarController {
         lblLogs.setText(sin.getLogsJuego());
          
         Img();
-        
+        sin.initvivos();
+        datos();
         String vidaPokemon = Double.toString(equipo[0].getVida());
         String vidaTotal = Double.toString(equipo[0].getVidaTotal());
-        vida.setText(vidaPokemon +" / "+ vidaTotal);
+        vidaP1.setText(vidaPokemon +" / "+ vidaTotal);
         
         String vidaPTux = Double.toString(sin.getTux().getVida());
         String vidaTuxTotal = Double.toString(sin.getTux().getVidaTotal());
@@ -215,6 +231,65 @@ public class JugarController {
                     "defensa: " + sin.getTux().getDefensa() + "\n" + 
                     "defensa especial: " + sin.getTux().getDefensaS() + "\n" +
                     "velocidad: " + sin.getTux().getVelocidad() + "\n");
+            int contador = 0;
+            String vidaPokemon;
+            String vidaTotal;
+            if(equipo[1] != null)
+            {
+                vidaPokemon = Double.toString(equipo[1].getVida());
+                vidaTotal = Double.toString(equipo[1].getVidaTotal());
+                vidaP2.setText(vidaPokemon +" / "+ vidaTotal);
+            }
+            else
+            {
+                 vidaP2.setText(0 +" / "+ 0);
+            }
+            if(equipo[2] != null)
+            {
+                vidaPokemon = Double.toString(equipo[2].getVida());
+                vidaTotal = Double.toString(equipo[2].getVidaTotal());
+                vidaP3.setText(vidaPokemon +" / "+ vidaTotal);
+            }
+            else
+            {
+                 vidaP3.setText(0 +" / "+ 0);
+            }
+            if(equipo[3] != null)
+            {
+                vidaPokemon = Double.toString(equipo[3].getVida());
+                vidaTotal = Double.toString(equipo[3].getVidaTotal());
+                vidaP4.setText(vidaPokemon +" / "+ vidaTotal);
+            }
+            else
+            {
+                 vidaP4.setText(0 +" / "+ 0);
+            }
+            if(equipo[4] != null)
+            {
+                vidaPokemon = Double.toString(equipo[4].getVida());
+                vidaTotal = Double.toString(equipo[4].getVidaTotal());
+                vidaP5.setText(vidaPokemon +" / "+ vidaTotal);
+            }
+            else
+            {
+                 vidaP5.setText(0 +" / "+ 0);
+            }
+            if(equipo[5] != null)
+            {
+                vidaPokemon = Double.toString(equipo[5].getVida());
+                vidaTotal = Double.toString(equipo[5].getVidaTotal());
+                vidaP6.setText(vidaPokemon +" / "+ vidaTotal);
+            }
+            else
+            {
+                 vidaP6.setText(0 +" / "+ 0);
+            }
+                
+                
+            
+            
+            
+           
 
     }
     
@@ -223,9 +298,19 @@ public class JugarController {
   {
       int i;
       Consultas consultas = new Consultas();
-      int cantidad = consultas.CantidadPokemon(sin.getentrenadorid());
+      int contador =0;
+      for(int j =0 ; j<6;j++)
+      {
+          if(equipo[j] != null)
+          {
+              contador++;
+          }
+      }
+      sin.setCantidad(contador);
+     
+        int vivos = sin.getCantidadVivos();
         ImageView equipoImage[] = {pokemon1,pokemon2,pokemon3,pokemon4,pokemon5,pokemon6};
-        for(i = 0;i<cantidad;i++)
+        for(i = 0;i<sin.getCantidad();i++)
         {
             
             
@@ -268,6 +353,7 @@ public class JugarController {
                    daño = (int) sin.getTux().getAtaque(equipo[elegido].getDefensa(),equipo[elegido].getTipo());
                    equipo[elegido].quitarvida(daño);
                    sin.setLogsJuego(sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
+                   Pokemonmuerto();
                    lblLogs.setText(sin.getLogsJuego());
                 }
                 else
@@ -275,15 +361,20 @@ public class JugarController {
                     daño = (int) sin.getTux().getAtaqueS(equipo[elegido].getDefensaS(),equipo[elegido].getTipo());
                     equipo[elegido].quitarvida(daño);
                     sin.setLogsJuego("Ataque Especial " + sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
+                    Pokemonmuerto();
                     lblLogs.setText(sin.getLogsJuego());
                 }     
                
             }
                 String vidaPokemon = Integer.toString((int) equipo[elegido].getVida());
                 String    vidaTotal = Integer.toString((int) equipo[elegido].getVidaTotal());
-                vida.setText(vidaPokemon +" / "+ vidaTotal);
-                ataque.setDisable(false);
-                ataqueS.setDisable(false);  
+                vidaP1.setText(vidaPokemon +" / "+ vidaTotal);
+                if(equipo[elegido].getVida() > 0)
+                {
+                    ataque.setDisable(false);
+                    ataqueS.setDisable(false); 
+                }
+                 
   }
   
   private void AtaqueTux()
@@ -318,7 +409,7 @@ public class JugarController {
                 
                 String vidaPokemon = Integer.toString((int) equipo[elegido].getVida());
                 String    vidaTotal = Integer.toString((int) equipo[elegido].getVidaTotal());
-                vida.setText(vidaPokemon +" / "+ vidaTotal);
+                vidaP1.setText(vidaPokemon +" / "+ vidaTotal);
                 }
                 
 
@@ -332,6 +423,34 @@ public class JugarController {
             ataque.setDisable(true);
             ataqueS.setDisable(true);  
             sin.setLogsJuego( equipo[0].getNombre()+" Ha muerto");
+            sin.setCantidadVivos();
+            int vivos = sin.getCantidadVivos();
+            if( vivos <=0)
+            {
+                sin.setLogsJuego( "FIN PARTIDA");
+                sin.setLogsJuego( "CANTIDAD DE TUX DERROTADOS = " + sin.getTuxMuertos());
+                try {
+                sin.setLogs("FIN PARTIDA");
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("finPartida.fxml"));
+
+                Scene scene = new Scene(fxmlLoader.load());
+                Stage stage = new Stage();
+                
+                stage.setTitle("MENU");
+                sin.setLogs("moviendose al menu");
+                stage.setScene(scene);
+                stage.resizableProperty().setValue(false); //sin botón de restaurar/maximiza
+                stage.show();
+
+                //cerramos la ventana actual buscando su referencia a través de algún 
+                //control 
+                Stage stageAcerrar = (Stage) tuxmuertos.getScene().getWindow();
+
+                stageAcerrar.close();
+
+            } catch (IOException e) {System.out.println(e);}
+            }
         }
         else
         {
@@ -367,27 +486,29 @@ public class JugarController {
   @FXML
   private void cambiarPokemon1() throws SQLException
   {
-      if(equipo[1].getVida() <=0)
+      if( equipo[1] == null  || equipo[1].getVida() <=0)
       {
-          sin.setLogsJuego( "POKEMON MUERTO, NO SE PUEDE SELECCIONAR");
+          sin.setLogsJuego( "NO SE PUEDE SELECCIONAR");
+          lblLogs.setText(sin.getLogsJuego());
       }
       else
       {
         Pokemon guardado = equipo[0];
-      equipo[0] = equipo[1];
-      equipo[1] = guardado;
-      Img();
-      datos(); 
-      AtaqueInicialTux();  
+        equipo[0] = equipo[1];
+        equipo[1] = guardado;
+        Img();
+        datos(); 
+        AtaqueInicialTux();  
       }
       
   }
   @FXML
    private void cambiarPokemon2() throws SQLException
   {
-      if(equipo[2].getVida() <=0)
+      if( equipo[2] == null ||  equipo[2].getVida() <=0)
       {
-          sin.setLogsJuego( "POKEMON MUERTO, NO SE PUEDE SELECCIONAR");
+          sin.setLogsJuego( "NO SE PUEDE SELECCIONAR");
+          lblLogs.setText(sin.getLogsJuego());
       }
       else
       {
@@ -402,9 +523,10 @@ public class JugarController {
    @FXML
     private void cambiarPokemon3() throws SQLException
   {
-      if(equipo[3].getVida() <=0)
+      if( equipo[3] == null  || equipo[3].getVida() <=0)
       {
-          sin.setLogsJuego( "POKEMON MUERTO, NO SE PUEDE SELECCIONAR");
+          sin.setLogsJuego( "NO SE PUEDE SELECCIONAR");
+          lblLogs.setText(sin.getLogsJuego());
       }
       else
       {
@@ -419,9 +541,10 @@ public class JugarController {
     @FXML
      private void cambiarPokemon4() throws SQLException
   {
-      if(equipo[4].getVida() <=0)
+      if( equipo[4] == null  || equipo[4].getVida() <=0)
       {
-          sin.setLogsJuego( "POKEMON MUERTO, NO SE PUEDE SELECCIONAR");
+          sin.setLogsJuego( "NO SE PUEDE SELECCIONAR");
+          lblLogs.setText(sin.getLogsJuego());
       }
       else
       {
@@ -436,9 +559,10 @@ public class JugarController {
     @FXML
       private void cambiarPokemon5() throws SQLException
   {
-      if(equipo[5].getVida() <=0)
+      if( equipo[5] == null  || equipo[5].getVida() <=0)
       {
-          sin.setLogsJuego( "POKEMON MUERTO, NO SE PUEDE SELECCIONAR");
+          sin.setLogsJuego( "NO SE PUEDE SELECCIONAR");
+          lblLogs.setText(sin.getLogsJuego());
       }
       else
       {
