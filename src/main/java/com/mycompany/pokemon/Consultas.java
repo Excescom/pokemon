@@ -197,20 +197,3 @@ public class Consultas {
 }
 
 
-
-/* ResultSet resul = con.createStatement().executeQuery("SELECT * FROM Pokemon");
-        
-        while(resul.next())
-        {
-            System.out.println
-            (
-                resul.getInt("ID_Pokemon") + ", " + 
-                resul.getString("Pokemon")  + ", "+ 
-                resul.getInt("HP") + ", " + 
-                resul.getInt("Attack") + ", " + 
-                resul.getInt("Defense") + ", " + 
-                resul.getInt("Special_Attack") + ", " + 
-                resul.getInt("Special_Defense") + ", " + 
-                resul.getInt("Speed")
-            );
-        }*/

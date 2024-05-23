@@ -46,9 +46,12 @@ public class FinPartidaController {
     //En initialize() ya están las variables creadas y son accesibles
     {     
         //logs = new ScrollPane();
-
+        
+        sin.setLogsJuego("la dificultad elejida es: " + sin.getdif());
         String texto = sin.getLogsJuego();
+        
         lblLogs.setText(texto);
+        
     }
     
     @FXML

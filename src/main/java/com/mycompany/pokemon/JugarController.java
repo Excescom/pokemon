@@ -409,7 +409,7 @@ public class JugarController {
                 }  
                 
                 String vidaPokemon = Integer.toString((int) equipo[elegido].getVida());
-                String    vidaTotal = Integer.toString((int) equipo[elegido].getVidaTotal());
+                String vidaTotal = Integer.toString((int) equipo[elegido].getVidaTotal());
                 vidaP1.setText(vidaPokemon +" / "+ vidaTotal);
                 }
                 
@@ -421,11 +421,13 @@ public class JugarController {
   {
         if(equipo[0].getVida() <= 0)
         {
+            
             ataque.setDisable(true);
             ataqueS.setDisable(true);  
             sin.setLogsJuego( equipo[0].getNombre()+" Ha muerto");
             sin.setCantidadVivos();
             int vivos = sin.getCantidadVivos();
+
             if( vivos <=0)
             {
                 sin.setLogsJuego( "FIN PARTIDA");

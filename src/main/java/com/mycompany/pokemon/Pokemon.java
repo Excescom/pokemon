@@ -141,6 +141,11 @@ public class Pokemon {
     public void quitarvida (double d)
     {
         vida = vida - d;
+        
+        if(vida <= 0)
+        {
+            vida=0;
+        }
     }
     
     

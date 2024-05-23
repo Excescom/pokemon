@@ -21,7 +21,7 @@
             <Font name="Comic Sans MS" size="29.0" />
          </font>
       </Button>
-      <Label layoutX="59.0" layoutY="125.0" text="¿SEGURO QUE QUIERES SALIR? SI SALES SE PERDERÁN LOS DATOS GUARDADOS">
+      <Label layoutX="33.0" layoutY="129.0" text="¿SEGURO QUE QUIERES SALIR? SI SALES SE PERDERÁN LOS DATOS NO GUARDADOS">
          <font>
             <Font size="19.0" />
          </font>
