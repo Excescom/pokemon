@@ -1,3 +1,5 @@
+CREATE DATABASE pokemon;
+USE pokemon;
 CREATE TABLE Pokemon
     (`ID_Pokemon` int not null, `Pokemon` varchar(11), `HP` int, `Attack` int, `Defense` int, `Special_Attack` int, `Special_Defense` int, `Speed` int, PRIMARY KEY (ID_Pokemon))
 ;
@@ -387,8 +389,11 @@ VALUES
 
 
 CREATE TABLE Types
-    (`ID_Type` int not null, `Type` varchar(8), PRIMAY KEY(ID_Type))
-;
+(
+    `ID_Type` int NOT NULL,
+    `Type` varchar(8),
+    PRIMARY KEY (`ID_Type`)
+);
     
 INSERT INTO Types
     (`ID_Type`, `Type`)
