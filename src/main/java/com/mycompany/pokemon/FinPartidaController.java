@@ -102,11 +102,10 @@ public class FinPartidaController {
                 stage.setTitle("MENU");
                 sin.setLogs("moviendose al menu");
                 stage.setScene(scene);
-                stage.resizableProperty().setValue(false); //sin botón de restaurar/maximiza
+                stage.resizableProperty().setValue(false); 
                 stage.show();
 
-                //cerramos la ventana actual buscando su referencia a través de algún 
-                //control 
+               
                 Stage stageAcerrar = (Stage) botonMenu.getScene().getWindow();
 
                 stageAcerrar.close();

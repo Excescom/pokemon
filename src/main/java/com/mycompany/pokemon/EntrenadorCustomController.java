@@ -601,6 +601,12 @@ public class EntrenadorCustomController {
     private void seleccionarRandom() throws SQLException 
     {
         Consultas consultas = new Consultas();
+        lbl6.setText("");
+        lbl5.setText("");
+        lbl4.setText("");
+        lbl3.setText("");
+        lbl2.setText("");
+        lbl.setText("");
         sin.initEquipoNull();
         sin.setEntrenadorid(0);
         img6.setImage(new Image("file:.//fotos//interrogacion.png"));
@@ -622,11 +628,6 @@ public class EntrenadorCustomController {
         pokemon4.setDisable(true);
         pokemon5.setDisable(true);
         pokemon6.setDisable(true);
-        lbl6.setText("");
-        lbl5.setText("");
-        lbl4.setText("");
-        lbl3.setText("");
-        lbl2.setText("");
-        lbl.setText("");
+        
     }
 }

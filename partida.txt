@@ -1,4 +1,150 @@
-la dificultad elejida es: veterano 
-Tux Ha realizado: 33 puntos de daño 
+la dificultad elejida es: recluta 
+CANTIDAD DE TUX DERROTADOS = 6 
+FIN PARTIDA 
+Dragonite Ha muerto 
+Tux Ha realizado: 14 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Dragonite Ataque Especial  Ha realizado: 16 puntos de daño 
+Ataque Especial Tux Ha realizado: 17 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 10 puntos de daño 
+Tux Ha realizado: 16 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 24 puntos de daño 
+Tux Ha realizado: 10 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 12 puntos de daño 
+Tux Ha realizado: 13 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 23 puntos de daño 
+Ataque Especial Tux Ha realizado: 11 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 22 puntos de daño 
+Tux Ha realizado: 14 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 20 puntos de daño 
+Tux Ha realizado: 14 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 17 puntos de daño 
+Ataque Especial Tux Ha realizado: 9 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 13 puntos de daño 
+Tux Ha realizado: 13 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 12 puntos de daño 
+Tux Ha realizado: 10 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 19 puntos de daño 
+Ataque Especial Tux Ha realizado: 14 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Dragonite Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 8 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 10 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 13 puntos de daño 
+Aerodactyl Ha muerto 
+Tux Ha realizado: 22 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 11 puntos de daño 
+Tux Ha realizado: 17 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 16 puntos de daño 
+Ataque Especial Tux Ha realizado: 21 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 18 puntos de daño 
+Tux Ha realizado: 20 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 12 puntos de daño 
+Tux Ha realizado: 26 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 13 puntos de daño 
+Ataque Especial Tux Ha realizado: 20 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 23 puntos de daño 
+Ataque Especial Tux Ha realizado: 17 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 23 puntos de daño 
+Tux Ha realizado: 18 puntos de daño 
+Aerodactyl Ataque Especial  Ha realizado: 20 puntos de daño 
+Dragonite Ha muerto 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Dragonite Ataque Especial  Ha realizado: 23 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 18 puntos de daño 
+Tux Ha realizado: 11 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 22 puntos de daño 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 12 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 14 puntos de daño 
+Ataque Especial Tux Ha realizado: 9 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 16 puntos de daño 
+Tux Ha realizado: 8 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 12 puntos de daño 
+Ataque Especial Tux Ha realizado: 10 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 15 puntos de daño 
+Tux Ha realizado: 7 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 24 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 17 puntos de daño 
+Tux Ha realizado: 15 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 24 puntos de daño 
+Ataque Especial Tux Ha realizado: 9 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Dragonite Ataque Especial  Ha realizado: 12 puntos de daño 
+Ataque Especial Tux Ha realizado: 11 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 22 puntos de daño 
+Tux Ha realizado: 7 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 14 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 8 puntos de daño 
+Dragonite Ataque Especial  Ha realizado: 11 puntos de daño 
+Dragonair Ha muerto 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 14 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 24 puntos de daño 
+Tux Ha realizado: 15 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 24 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 12 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 19 puntos de daño 
+Tux Ha realizado: 13 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Dragonair Ataque Especial  Ha realizado: 17 puntos de daño 
+Ataque Especial Tux Ha realizado: 10 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 14 puntos de daño 
+Ataque Especial Tux Ha realizado: 9 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 15 puntos de daño 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 15 puntos de daño 
+Ataque Especial Tux Ha realizado: 12 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 8 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 22 puntos de daño 
+Tux Ha realizado: 9 puntos de daño 
+Dragonair Ataque Especial  Ha realizado: 20 puntos de daño 
+Gyarados Ha muerto 
+Tux Ha realizado: 11 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 19 puntos de daño 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 26 puntos de daño 
+Tux Ha realizado: 14 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 27 puntos de daño 
+Ataque Especial Tux Ha realizado: 10 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Gyarados Ataque Especial  Ha realizado: 20 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 10 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 20 puntos de daño 
+Tux Ha realizado: 14 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 21 puntos de daño 
+Ataque Especial Tux Ha realizado: 7 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 14 puntos de daño 
+Ataque Especial Tux Ha realizado: 16 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 15 puntos de daño 
+Tux Ha realizado: 11 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 23 puntos de daño 
+Ataque Especial Tux Ha realizado: 13 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 10 puntos de daño 
+Tux Ha realizado: 16 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 20 puntos de daño 
+Tux Ha realizado: 11 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 15 puntos de daño 
+Tux Ha realizado: 7 puntos de daño 
+Gyarados Ataque Especial  Ha realizado: 12 puntos de daño 
 Empieza el juego 
 Iniciando Logs de la partida
