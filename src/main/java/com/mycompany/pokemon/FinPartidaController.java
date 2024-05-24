@@ -48,6 +48,7 @@ public class FinPartidaController {
         //logs = new ScrollPane();
         
         sin.setLogsJuego("la dificultad elejida es: " + sin.getdif());
+        sin.setLogsJuego( "CANTIDAD DE TUX DERROTADOS = " + sin.getTuxMuertos());
         String texto = sin.getLogsJuego();
         
         lblLogs.setText(texto);

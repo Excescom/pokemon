@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,6 +18,9 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.Dragboard;
+import javafx.scene.input.TransferMode;
 
 public class JugarController {
     @FXML
@@ -119,6 +124,8 @@ public class JugarController {
         String vidaTuxTotal = Double.toString(sin.getTux().getVidaTotal());
         vidaTux.setText(vidaPTux +" / "+ vidaTuxTotal);
         
+        
+        
         AtaqueInicialTux();
 
             
@@ -179,6 +186,7 @@ public class JugarController {
             }
              
              AtaqueTux();
+             
     }
     
     @FXML
@@ -205,6 +213,7 @@ public class JugarController {
                 Tuxmuerto();
             }
             AtaqueTux();
+            AtaqueTux();
 
     }
     
@@ -214,14 +223,16 @@ public class JugarController {
         datosTux.setText("");
         Consultas consultas = new Consultas();
         int elegido=0;
-        
+        int tipoP = equipo[elegido].getTipo();
+        int tipoT = sin.getTux().getTipo();
          datosPokemon.setText("nivel: " +  equipo[elegido].getNivel() + "\n" +  
                     "vida Total: " +  equipo[elegido].getVidaTotal() + "\n" + 
                     "ataque: " +  equipo[elegido].ataque + "\n"+
                     "ataque Especial: " +  equipo[elegido].ataqueS + "\n" +
                     "defensa: " +  equipo[elegido].getDefensa() + "\n" + 
                     "defensa especial: " +  equipo[elegido].getDefensaS() + "\n" +
-                    "velocidad: " +  equipo[elegido].getVelocidad() + "\n");
+                    "velocidad: " +  equipo[elegido].getVelocidad() + "\n" +
+                    "tipo: " +  consultas.pokemonTipo(tipoP) + "\n");
         
             
             
@@ -231,7 +242,8 @@ public class JugarController {
                     "ataque Especial: " + sin.getTux().ataqueS + "\n" +
                     "defensa: " + sin.getTux().getDefensa() + "\n" + 
                     "defensa especial: " + sin.getTux().getDefensaS() + "\n" +
-                    "velocidad: " + sin.getTux().getVelocidad() + "\n");
+                    "velocidad: " + sin.getTux().getVelocidad() + "\n" +
+                    "tipo: " +  consultas.pokemonTipo(tipoT) + "\n" );
             int contador = 0;
             String vidaPokemon;
             String vidaTotal;
@@ -347,24 +359,7 @@ public class JugarController {
             //empieza el juego
             if(sin.getTux().getVelocidad() > equipo[elegido].getVelocidad())
             {
-                int ataca = (int) (Math.random() * 2);
-                
-                if(ataca == 0)
-                {
-                   daño = (int) sin.getTux().getAtaque(equipo[elegido].getDefensa(),equipo[elegido].getTipo());
-                   equipo[elegido].quitarvida(daño);
-                   sin.setLogsJuego(sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
-                   Pokemonmuerto();
-                   lblLogs.setText(sin.getLogsJuego());
-                }
-                else
-                {
-                    daño = (int) sin.getTux().getAtaqueS(equipo[elegido].getDefensaS(),equipo[elegido].getTipo());
-                    equipo[elegido].quitarvida(daño);
-                    sin.setLogsJuego("Ataque Especial " + sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
-                    Pokemonmuerto();
-                    lblLogs.setText(sin.getLogsJuego());
-                }     
+                AtaqueTux();   
                
             }
                 String vidaPokemon = Integer.toString((int) equipo[elegido].getVida());
@@ -391,22 +386,27 @@ public class JugarController {
                 }
                 else
                 {
-                    if(ataca == 0)
-                {
-                   daño = (int) sin.getTux().getAtaque(equipo[elegido].getDefensa(),equipo[elegido].getTipo());
-                   equipo[elegido].quitarvida(daño);
-                   sin.setLogsJuego(sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
-                   Pokemonmuerto();
-                   lblLogs.setText(sin.getLogsJuego());
-                }
-                else
-                {
-                    daño = (int) sin.getTux().getAtaqueS(equipo[elegido].getDefensaS(),equipo[elegido].getTipo());
-                    equipo[elegido].quitarvida(daño);
-                    sin.setLogsJuego("Ataque Especial " + sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
-                    Pokemonmuerto();
-                    lblLogs.setText(sin.getLogsJuego());
-                }  
+                    if(equipo[elegido].getVida() != 0)
+                    {
+                        if(ataca == 0)
+                        {
+                            daño = (int) sin.getTux().getAtaque(equipo[elegido].getDefensa(),equipo[elegido].getTipo());
+                            equipo[elegido].quitarvida(daño);
+                            sin.setLogsJuego(sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
+                            Pokemonmuerto();
+                            lblLogs.setText(sin.getLogsJuego());
+                        }
+                        else
+                        {
+                            daño = (int) sin.getTux().getAtaqueS(equipo[elegido].getDefensaS(),equipo[elegido].getTipo());
+                            equipo[elegido].quitarvida(daño);
+                            sin.setLogsJuego("Ataque Especial " + sin.getTux().getNombre() +" Ha realizado: "+daño+" puntos de daño");
+                            Pokemonmuerto();
+                            lblLogs.setText(sin.getLogsJuego());
+                        }  
+                    }
+                    
+                    
                 
                 String vidaPokemon = Integer.toString((int) equipo[elegido].getVida());
                 String vidaTotal = Integer.toString((int) equipo[elegido].getVidaTotal());
@@ -427,11 +427,12 @@ public class JugarController {
             sin.setLogsJuego( equipo[0].getNombre()+" Ha muerto");
             sin.setCantidadVivos();
             int vivos = sin.getCantidadVivos();
-
+            
+            
             if( vivos <=0)
             {
                 sin.setLogsJuego( "FIN PARTIDA");
-                sin.setLogsJuego( "CANTIDAD DE TUX DERROTADOS = " + sin.getTuxMuertos());
+                
                 try {
                 sin.setLogs("FIN PARTIDA");
                 FXMLLoader fxmlLoader = new FXMLLoader();
@@ -462,7 +463,7 @@ public class JugarController {
         }
   }
   
-  private void Tuxmuerto()
+  private void Tuxmuerto() throws SQLException
   {
         if(sin.getTux().getVida() <= 0)
         {
@@ -477,6 +478,7 @@ public class JugarController {
             sin.setTuxMuertos();
             String tuxm = Integer.toString(sin.getTuxMuertos());
             tuxmuertos.setText(tuxm);
+            datos();
             vidaTux.setText(vidaPTux +" / "+ vidaTuxTotal);
             
         }
@@ -577,4 +579,8 @@ public class JugarController {
       AtaqueInicialTux(); 
       }
   }
+      
+      
+      
+    
 }

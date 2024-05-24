@@ -15,8 +15,8 @@ public class Tux  extends Pokemon{
     {
         super();
         nombre = "Tux";
-        tipo = (int) (Math.random() * 17 +1);
-        id = 0;
+        tipo = (int) (Math.random() * 17 +1 );
+        
         
         if(difi == "pesadilla")
         {

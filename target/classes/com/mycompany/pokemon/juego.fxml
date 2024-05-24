@@ -16,7 +16,7 @@
       <TextArea fx:id="lblLogs" editable="false" layoutX="67.0" layoutY="580.0" prefHeight="102.0" prefWidth="683.0" wrapText="true" />
       <ImageView fx:id="tux" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="pokemon1" fitHeight="180.0" fitWidth="250.0" layoutX="269.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="pokemon2" fitHeight="87.0" fitWidth="130.0" layoutX="75.0" layoutY="483.0" onMouseClicked="#cambiarPokemon1" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="pokemon2" fitHeight="87.0" fitWidth="130.0" layoutX="75.0" layoutY="483.0" onDragDropped="#cambiarPokemon1" onMouseClicked="#cambiarPokemon1" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="pokemon3" fitHeight="87.0" fitWidth="130.0" layoutX="205.0" layoutY="483.0" onMouseClicked="#cambiarPokemon2" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="pokemon4" fitHeight="87.0" fitWidth="130.0" layoutX="335.0" layoutY="483.0" onMouseClicked="#cambiarPokemon3" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="pokemon5" fitHeight="87.0" fitWidth="130.0" layoutX="465.0" layoutY="483.0" onMouseClicked="#cambiarPokemon4" pickOnBounds="true" preserveRatio="true" />

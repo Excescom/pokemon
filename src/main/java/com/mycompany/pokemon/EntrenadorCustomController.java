@@ -609,19 +609,20 @@ public class EntrenadorCustomController {
         lbl.setText("");
         sin.initEquipoNull();
         sin.setEntrenadorid(0);
+        
         img6.setImage(new Image("file:.//fotos//interrogacion.png"));
         img5.setImage(new Image("file:.//fotos//interrogacion.png"));
         img4.setImage(new Image("file:.//fotos//interrogacion.png"));
         img3.setImage(new Image("file:.//fotos//interrogacion.png"));
         img2.setImage(new Image("file:.//fotos//interrogacion.png"));
         img.setImage(new Image("file:.//fotos//interrogacion.png"));
+        int cantidad = (int) (Math.random() *6);
+        for(int i=0; i<cantidad;i++)
+        {
+            sin.setEquipoCustom(i,consultas.PokemonNombre((int) (Math.random() * 151)));
+        }
         
-        sin.setEquipoCustom(0,consultas.PokemonNombre((int) (Math.random() * 151)));
-        sin.setEquipoCustom(1, consultas.PokemonNombre((int) (Math.random() * 151 )));     
-        sin.setEquipoCustom(2, consultas.PokemonNombre((int) (Math.random() * 151)));
-        sin.setEquipoCustom(3, consultas.PokemonNombre((int) (Math.random() * 151)));       
-        sin.setEquipoCustom(4, consultas.PokemonNombre((int) (Math.random() * 151)));
-        sin.setEquipoCustom(5, consultas.PokemonNombre((int) (Math.random() * 151)));
+        
         guardar.setDisable(true);
         pokemon2.setDisable(true);
         pokemon3.setDisable(true);

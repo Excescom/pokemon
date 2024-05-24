@@ -166,7 +166,7 @@ public class Pokemon {
         }
         
         tabla[1][13] = 1.25 ;
-        tabla[1][14] = 0 ;
+        tabla[1][14] = 1 ;
         tabla[1][17] = 1.25 ;
         tabla[2][2] = 1.25 ;
         tabla[2][3] = 1.25 ;

@@ -132,6 +132,22 @@ public class Consultas {
         return resultado ;  
     }
     
+     public String pokemonTipo(int id) throws SQLException
+    {
+        
+        Connection con;
+        con= DriverManager.getConnection(sin.getDatabase(),sin.getUsuario(),sin.getContrasenya());
+        ResultSet resul = con.createStatement().executeQuery("SELECT type from types WHERE ID_TYPE = "+ id);
+        String resultado;
+        
+        resul.next();
+        resultado = resul.getString("type");    
+        
+        con.close();
+
+        return resultado ;  
+    }
+    
     public String Entrenadornombre(int i) throws SQLException
     {
         
