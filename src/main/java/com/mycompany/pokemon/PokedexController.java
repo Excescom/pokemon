@@ -55,7 +55,7 @@ public class PokedexController {
         logs = new ScrollPane();
         String texto = sin.getLogs();
         lblLogs.setText(texto);
-        
+        //creo la cantidad de pokemons que hay
         int i = 0;
                 for(i =1 ; i <= 151 ; i++)
                 {
@@ -66,8 +66,9 @@ public class PokedexController {
                     }
                     
                 }
- 
+                
         nombres.getItems().addAll(nombre);  
+        //cuando selecciono pokemon se ejecuta el mostrar
          nombres.getSelectionModel().selectedItemProperty().addListener(
             new ChangeListener<String>() {
                 @Override
@@ -101,6 +102,7 @@ public class PokedexController {
     }
     
     @FXML
+    //vuelves al menú
     private void menu()
         
     {
@@ -127,6 +129,7 @@ public class PokedexController {
         
     }
     @FXML
+    //muestra el pokemon seleccionado
     private void mostrar() throws SQLException
     {
 

@@ -1,182 +1,54 @@
-CANTIDAD DE TUX DERROTADOS = 5 
+CANTIDAD DE TUX DERROTADOS = 1 
 la dificultad elejida es: recluta 
 FIN PARTIDA 
-Snorlax Ha muerto 
-Tux Ha realizado: 14 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 14 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
-Se genera un nuevo tux :o 
-TUX Ha muerto 
-Snorlax Ataque Especial  Ha realizado: 16 puntos de daño 
-Ataque Especial Tux Ha realizado: 8 puntos de daño 
-Ataque Especial Tux Ha realizado: 7 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 22 puntos de daño 
-Tux Ha realizado: 9 puntos de daño 
-Tux Ha realizado: 11 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 11 puntos de daño 
-Tux Ha realizado: 10 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 16 puntos de daño 
-Ataque Especial Tux Ha realizado: 11 puntos de daño 
-Tux Ha realizado: 7 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 16 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Ataque Especial Tux Ha realizado: 11 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 18 puntos de daño 
-Ataque Especial Tux Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 9 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 11 puntos de daño 
-Tux Ha realizado: 9 puntos de daño 
-Ataque Especial Tux Ha realizado: 15 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 10 puntos de daño 
-Ataque Especial Tux Ha realizado: 14 puntos de daño 
-Ataque Especial Tux Ha realizado: 11 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 19 puntos de daño 
-Tux Ha realizado: 8 puntos de daño 
-Charizard Ha muerto 
-Ataque Especial Tux Ha realizado: 19 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 42 puntos de daño 
-Blastoise Ha muerto 
-Ataque Especial Tux Ha realizado: 16 puntos de daño 
-Tux Ha realizado: 24 puntos de daño 
-Se genera un nuevo tux :o 
-TUX Ha muerto 
-Blastoise Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 9 puntos de daño 
-Tux Ha realizado: 10 puntos de daño 
-Blastoise Ataque Especial  Ha realizado: 19 puntos de daño 
-Ataque Especial Tux Ha realizado: 12 puntos de daño 
-Ataque Especial Tux Ha realizado: 9 puntos de daño 
-Blastoise Ataque Especial  Ha realizado: 17 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
-Ataque Especial Tux Ha realizado: 13 puntos de daño 
-Blastoise Ataque Especial  Ha realizado: 22 puntos de daño 
-Tux Ha realizado: 8 puntos de daño 
-Ataque Especial Tux Ha realizado: 12 puntos de daño 
-Blastoise Ataque Especial  Ha realizado: 20 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
-Blastoise Ataque Especial  Ha realizado: 16 puntos de daño 
-Lapras Ha muerto 
-Tux Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 17 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 23 puntos de daño 
+Exeggcute Ha muerto 
 Tux Ha realizado: 12 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 15 puntos de daño 
-Tux Ha realizado: 13 puntos de daño 
-Tux Ha realizado: 9 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 20 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Ataque Especial Tux Ha realizado: 15 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 16 puntos de daño 
-Tux Ha realizado: 9 puntos de daño 
-Tux Ha realizado: 17 puntos de daño 
-Se genera un nuevo tux :o 
-TUX Ha muerto 
-Lapras Ataque Especial  Ha realizado: 11 puntos de daño 
-Tux Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 7 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 23 puntos de daño 
-Ataque Especial Tux Ha realizado: 9 puntos de daño 
-Ataque Especial Tux Ha realizado: 8 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 18 puntos de daño 
+Exeggcute Ataque Especial  Ha realizado: 22 puntos de daño 
+Ataque Especial Tux Ha realizado: 16 puntos de daño 
 Tux Ha realizado: 15 puntos de daño 
+Exeggcute Ataque Especial  Ha realizado: 15 puntos de daño 
 Tux Ha realizado: 10 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 10 puntos de daño 
-Lapras Ataque Especial  Ha realizado: 19 puntos de daño 
-Ataque Especial Tux Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 10 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 13 puntos de daño 
-Tux Ha realizado: 15 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 22 puntos de daño 
-Ataque Especial Tux Ha realizado: 9 puntos de daño 
-Tux Ha realizado: 13 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 24 puntos de daño 
-Ataque Especial Tux Ha realizado: 12 puntos de daño 
 Ataque Especial Tux Ha realizado: 17 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 24 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Ataque Especial Tux Ha realizado: 14 puntos de daño 
-Charizard Ataque Especial  Ha realizado: 14 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
-Tux Ha realizado: 7 puntos de daño 
-Se genera un nuevo tux :o 
-TUX Ha muerto 
-Snorlax Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 10 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 14 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 11 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 21 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 10 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 17 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 20 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 16 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 16 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 12 puntos de daño 
-Ataque Especial Tux Ha realizado: 0 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Snorlax Ataque Especial  Ha realizado: 13 puntos de daño 
-Tux Ha realizado: 0 puntos de daño 
-Ataque Especial Tux Ha realizado: 8 puntos de daño 
-Tux Ha realizado: 11 puntos de daño 
-Se genera un nuevo tux :o 
-TUX Ha muerto 
-Charizard Ataque Especial  Ha realizado: 16 puntos de daño 
-Venusaur Ha muerto 
-Tux Ha realizado: 28 puntos de daño 
-Tux Ha realizado: 29 puntos de daño 
-Venusaur Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 28 puntos de daño 
-Ataque Especial Tux Ha realizado: 23 puntos de daño 
-Venusaur Ataque Especial  Ha realizado: 20 puntos de daño 
-Ataque Especial Tux Ha realizado: 13 puntos de daño 
-Tux Ha realizado: 27 puntos de daño 
-Venusaur Ataque Especial  Ha realizado: 15 puntos de daño 
-Ataque Especial Tux Ha realizado: 18 puntos de daño 
-Ataque Especial Tux Ha realizado: 16 puntos de daño 
-Venusaur Ataque Especial  Ha realizado: 26 puntos de daño 
-Pikachu Ha muerto 
-Tux Ha realizado: 16 puntos de daño 
-Pikachu Ataque Especial  Ha realizado: 23 puntos de daño 
-Tux Ha realizado: 11 puntos de daño 
-Tux Ha realizado: 12 puntos de daño 
-Pikachu Ataque Especial  Ha realizado: 20 puntos de daño 
-Tux Ha realizado: 16 puntos de daño 
+Exeggcute Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 18 puntos de daño 
+Ataque Especial Tux Ha realizado: 21 puntos de daño 
+Exeggcute Ataque Especial  Ha realizado: 20 puntos de daño 
 Tux Ha realizado: 17 puntos de daño 
-Pikachu Ataque Especial  Ha realizado: 20 puntos de daño 
-Ataque Especial Tux Ha realizado: 12 puntos de daño 
+Ataque Especial Tux Ha realizado: 19 puntos de daño 
+Exeggcute Ataque Especial  Ha realizado: 18 puntos de daño 
+Mewtwo Ha muerto 
 Ataque Especial Tux Ha realizado: 15 puntos de daño 
-Pikachu Ataque Especial  Ha realizado: 18 puntos de daño 
-Tux Ha realizado: 14 puntos de daño 
+Se genera un nuevo tux :o 
+TUX Ha muerto 
+Mewtwo Ha realizado: 18 puntos de daño 
+Tux Ha realizado: 12 puntos de daño 
+Mewtwo Ha realizado: 24 puntos de daño 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
+Ataque Especial Tux Ha realizado: 25 puntos de daño 
+Mewtwo Ataque Especial  Ha realizado: 16 puntos de daño 
+Ataque Especial Tux Ha realizado: 23 puntos de daño 
+Ataque Especial Tux Ha realizado: 21 puntos de daño 
+Mewtwo Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 24 puntos de daño 
+Ataque Especial Tux Ha realizado: 23 puntos de daño 
+Mewtwo Ataque Especial  Ha realizado: 22 puntos de daño 
+Tux Ha realizado: 29 puntos de daño 
+Mewtwo Ha realizado: 15 puntos de daño 
+Goldeen Ha muerto 
+Ataque Especial Tux Ha realizado: 16 puntos de daño 
+Tux Ha realizado: 13 puntos de daño 
+Goldeen Ataque Especial  Ha realizado: 18 puntos de daño 
+Ataque Especial Tux Ha realizado: 15 puntos de daño 
 Tux Ha realizado: 9 puntos de daño 
-Pikachu Ataque Especial  Ha realizado: 18 puntos de daño 
+Goldeen Ataque Especial  Ha realizado: 12 puntos de daño 
+Ataque Especial Tux Ha realizado: 11 puntos de daño 
+Tux Ha realizado: 17 puntos de daño 
+Goldeen Ataque Especial  Ha realizado: 18 puntos de daño 
+Ataque Especial Tux Ha realizado: 16 puntos de daño 
+Tux Ha realizado: 8 puntos de daño 
+Goldeen Ataque Especial  Ha realizado: 14 puntos de daño 
+Tux Ha realizado: 7 puntos de daño 
+Ataque Especial Tux Ha realizado: 10 puntos de daño 
+Goldeen Ataque Especial  Ha realizado: 19 puntos de daño 
 Empieza el juego 
 Iniciando Logs de la partida

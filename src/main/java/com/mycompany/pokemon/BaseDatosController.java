@@ -61,7 +61,6 @@ public class BaseDatosController {
         sin.Singelton();
         
     }
-     
     
      public static void showAlert(AlertType alertType, String title, String content) {
         Alert alert = new Alert(alertType);
@@ -72,6 +71,7 @@ public class BaseDatosController {
     }
      
     @FXML
+    //salta una alerta que comprueba si esstá bien conectado a la base de datos
     private void prueba() throws SQLException
     {
         boolean conectado = consultas.comprobar(port.getText(), ip.getText(), user.getText(), passwd.getText(), db.getText(), drv.getText());
@@ -100,6 +100,7 @@ public class BaseDatosController {
     
     
     @FXML
+    //salta una alerta que comprueba si esstá bien conectado a la base de datos te mueve al menú principal en caso de ser una conexión correcta
     private void empieza()
     {
         sin.setLogs("probando conexión");

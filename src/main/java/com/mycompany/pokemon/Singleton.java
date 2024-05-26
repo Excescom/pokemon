@@ -40,7 +40,7 @@ public class Singleton
    private int cantidadTotal;
    private int tuxMuertos;
    
-   
+   //se inicializan los datos necesarios
    void Singelton()
    {
        logs = "Iniciando logs";   
@@ -102,6 +102,7 @@ public class Singleton
        return equipo;
        
    }
+   //añade los pokemons del entrenador seleccionado
    public void setEquipoEntrenadores() throws SQLException
    {
        Consultas consultas = new Consultas();
@@ -172,7 +173,7 @@ public class Singleton
             }
           
        }
-   
+   //añade de 1 en 1 en el array a los pokemons
     public void setEquipoCustom(int position, String name) throws SQLException
    {
        
@@ -216,7 +217,7 @@ public class Singleton
                             e.printStackTrace();
                         }
    }
-    
+    //añade a todos los pokemons que has seleccionado
     public void setEquipoCustomCompleto()
     {
         Consultas consultas = new Consultas();

@@ -40,6 +40,7 @@ public class FinPartidaController {
     
     Singleton sin = Singleton.getInstancia();
     @FXML
+    //guarda datos en el singleton
     private void initialize() throws SQLException
     //método que es llamado internamente justo después del constructor
     //En el constructor NO SE tiene acceso a las variables enlazadas con @FXML
@@ -56,6 +57,7 @@ public class FinPartidaController {
     }
     
     @FXML
+    //se mueve al menñu y guarda los datos en un txt
     private void menuGuardado() {
     try {
         sin.setLogs("moviendose al menú");
@@ -87,6 +89,7 @@ public class FinPartidaController {
 
     
     @FXML
+    //se mueve al menú sin guardar
     private void menu()
         
     {

@@ -91,6 +91,7 @@ public class JugarController {
     Pokemon[] equipo = sin.getEquipo();
 
     @FXML
+    //coloca todos los pokemons e inicializa la partida
     private void initialize() throws SQLException
     //método que es llamado internamente justo después del constructor
     //En el constructor NO SE tiene acceso a las variables enlazadas con @FXML
@@ -98,6 +99,8 @@ public class JugarController {
     {     
         logs = new ScrollPane();
         tux.setImage(new Image("file:.//fotos//pokemones//tux.png"));
+        
+        //pokemon1.setId("1");
         
         Tux tux = new Tux(sin.getdif()); 
         sin.setTux(tux);
@@ -132,6 +135,7 @@ public class JugarController {
     }
     
     @FXML
+    //vuelve al menú, preo priemro peregunta si quires guardar
     private void menu()
         
     {
@@ -161,6 +165,7 @@ public class JugarController {
     }
     
     @FXML
+    //realiza tu pokemon un ataque normal
     private void ataque() throws SQLException
     {
         int elegido = 0;
@@ -190,6 +195,7 @@ public class JugarController {
     }
     
     @FXML
+    //realiza tu pokemon un ataque especial
     private void ataqueS() throws SQLException
     {
         
@@ -216,7 +222,7 @@ public class JugarController {
             AtaqueTux();
 
     }
-    
+    //actualiza los datos de la vida y cuando cambias a un pokemon
     private void datos() throws SQLException
     {
         datosPokemon.setText("");
@@ -306,7 +312,7 @@ public class JugarController {
 
     }
     
-            
+  // vuelve a colocar las imágenes en su lugar cuando cambias un pokemon          
   private void Img() throws SQLException
   {
       int i;
@@ -351,7 +357,7 @@ public class JugarController {
             equipoImage[i].setImage(new Image("file:.//fotos//pokemones//none.png"));
         }
   }
-  
+  //compreuba la velocidad de tux y tu pokemon para ver quén ataca primero
   private void AtaqueInicialTux()
   {
       int elegido = 0;
@@ -372,7 +378,7 @@ public class JugarController {
                 }
                  
   }
-  
+  //tux ataca de forma aleatoria ataque debil o fuerte
   private void AtaqueTux()
   {
       int elegido = 0;
@@ -416,7 +422,7 @@ public class JugarController {
 
                 
   }
-  
+  //comprueba si tu pokemon muere y si te quedan pokemos, si no te quedan se termina la partida
   private void Pokemonmuerto()
   {
         if(equipo[0].getVida() <= 0)
@@ -462,7 +468,7 @@ public class JugarController {
             ataqueS.setDisable(false);  
         }
   }
-  
+  //comprueba si tux muere y genera otro
   private void Tuxmuerto() throws SQLException
   {
         if(sin.getTux().getVida() <= 0)
@@ -488,6 +494,7 @@ public class JugarController {
             ataqueS.setDisable(false);  
         }
   }
+  //cambian a los pokemons de posición
   @FXML
   private void cambiarPokemon1() throws SQLException
   {
@@ -517,6 +524,7 @@ public class JugarController {
       }
       else
       {
+         
       Pokemon guardado = equipo[0];
       equipo[0] = equipo[2];
       equipo[2] = guardado;
@@ -581,6 +589,5 @@ public class JugarController {
   }
       
       
-      
-    
+  
 }

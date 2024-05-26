@@ -117,9 +117,9 @@ public class Pokemon {
     
     
     
-    //bon es la bonificación es el resultado de la tabla de tipos
-    //la d es la defensa del pokemon rival
     
+    //la d es la defensa del pokemon rival y tipoD el tipo del pokemon rival
+    //ataque noral
     public double getAtaque( double d, int tipoD )
     {
         double valor = 85 + Math.random() * 115 ;  
@@ -128,7 +128,7 @@ public class Pokemon {
         return daño  ;
         
     }
-    
+    //ataque especial
     public double getAtaqueS( double d, int tipoD )
     {
         double valor = 85 + Math.random() * 115 ;   
@@ -138,6 +138,7 @@ public class Pokemon {
          
     }
     //d es daño
+    //pre daño que se realiza
     public void quitarvida (double d)
     {
         vida = vida - d;
@@ -148,7 +149,7 @@ public class Pokemon {
         }
     }
     
-    
+    //se crea la tabla de tipos 
     private double[][] TablaTipos()
     {
         double[][] tabla = new double [18][18];

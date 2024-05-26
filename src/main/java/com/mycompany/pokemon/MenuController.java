@@ -53,7 +53,7 @@ public class MenuController {
         String texto = sin.getLogs();
         lblLogs.setText(texto);
         logo.setImage(new Image("file:.//fotos//pokemon.png"));
-        
+        //te perimte selccionar en el choicebox
          dificultad.getSelectionModel().selectedItemProperty().addListener(
             new ChangeListener<String>() {
                 @Override
@@ -67,12 +67,13 @@ public class MenuController {
     }
     
     
-    
+    //añadde la dificulad
     public void dif()
     {
         dificultad.getItems().addAll(difi);   
     }
     @FXML
+    //le pasa al singleton cuás es la dificultad
     public String getdif()
     {
         String resul = "recluta";
@@ -94,6 +95,7 @@ public class MenuController {
     }
     
     @FXML
+    //se mueve a la base de datos, pero primero pregunta si estás seguro
     private void db()
         
     {
@@ -121,6 +123,7 @@ public class MenuController {
     }
     
     @FXML
+    //te mueve al juego
     private void juego() throws SQLException
         
     {
@@ -158,6 +161,7 @@ public class MenuController {
     }
     
     @FXML
+    //te mueve a la pokedex
     private void pokedex()
         
     {
@@ -186,6 +190,7 @@ public class MenuController {
     
     
     @FXML
+    //te mueve a entrenadores
     private void entrenadores()
         
     {
@@ -212,6 +217,7 @@ public class MenuController {
  
     }
     @FXML
+    //te mueve a normas
     private void normas()
         
     {

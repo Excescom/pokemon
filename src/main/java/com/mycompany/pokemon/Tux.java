@@ -9,8 +9,8 @@ package com.mycompany.pokemon;
  * @author danie
  */
 public class Tux  extends Pokemon{
-    
-    
+    //pre dificultad
+    //crea a tux
      Tux(String difi)
     {
         super();

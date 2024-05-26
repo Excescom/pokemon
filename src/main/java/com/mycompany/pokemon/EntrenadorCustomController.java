@@ -83,6 +83,7 @@ public class EntrenadorCustomController {
     Consultas consultas = new Consultas();
     
     @FXML
+    // pongo todos los listeners para cada caja
     private void initialize() throws SQLException
     //método que es llamado internamente justo después del constructor
     //En el constructor NO SE tiene acceso a las variables enlazadas con @FXML
@@ -314,6 +315,7 @@ public class EntrenadorCustomController {
     }
     
     @FXML
+    //te devuelve al menú
     private void menu()
         
     {
@@ -340,6 +342,7 @@ public class EntrenadorCustomController {
         
     }
     @FXML
+    //muestran los pokemons seleccionados
     private void mostrar() throws SQLException
     {
 
@@ -560,6 +563,7 @@ public class EntrenadorCustomController {
     }
     
     @FXML
+    //añade los pokemons que has elejido, esto es para guardarlos
     private void seleccionar() throws SQLException 
     {
         sin.initEquipoNull();
@@ -598,6 +602,7 @@ public class EntrenadorCustomController {
     }
     
     @FXML
+    //te hace una selección aleatoria de los pokemos
     private void seleccionarRandom() throws SQLException 
     {
         Consultas consultas = new Consultas();

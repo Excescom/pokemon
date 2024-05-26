@@ -27,6 +27,7 @@ public class NormasController {
 
     Singleton sin = Singleton.getInstancia();
     @FXML
+    //escribo las normas
     private void initialize()
     //método que es llamado internamente justo después del constructor
     //En el constructor NO SE tiene acceso a las variables enlazadas con @FXML
@@ -52,6 +53,7 @@ public class NormasController {
     }
     
     @FXML
+    //te lleva al manú
     private void menu()
         
     {

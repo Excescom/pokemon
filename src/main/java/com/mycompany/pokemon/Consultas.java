@@ -22,7 +22,8 @@ import java.util.Map;
 
 public class Consultas {
     Singleton sin = Singleton.getInstancia();
-    
+   //pre le pasas una consulta
+    //te convierte las consultas mñultiples en listas de mapas de string
   public List<Map<String, String>> lista(String c) throws SQLException 
   {
         Connection con;
@@ -55,7 +56,7 @@ public class Consultas {
         con.close();
         return rs;
     }
-    
+    //comprueba la conexión con la base de datos
     public Boolean comprobar(String puerto, String dir,String usuario,String contrasenya, String database, String driver )
     {
         sin.setLogs("probando conexión");
@@ -77,7 +78,8 @@ public class Consultas {
             
         }
     }
-    
+    //pre el nombre del pokemon
+    //devuelve el id de 1 pokemon
     public String pokemonId(String n) throws SQLException
     {
         
@@ -94,7 +96,8 @@ public class Consultas {
 
         return resultado ;  
     }
-    
+    //pre pasar id del pokemon
+    //te devuelve el mobre de 1 pokemon
     public String PokemonNombre(int i) throws SQLException
     {
         
@@ -108,7 +111,8 @@ public class Consultas {
         return resultado ;
         
     }
-    
+    //pre id del pokemon
+    //devuelve todos los datos del pokemon icluido el tipo
     public List<Map<String, String>> PokemonCompleto(int id) throws SQLException
     {
         String sentencia = "SELECT p.*, (SELECT t.Type FROM Types t JOIN Rel_Pokemon_Type rpt ON t.ID_Type = rpt.ID_Type WHERE rpt.ID_Pokemon = p.ID_Pokemon LIMIT 1) AS First_Type FROM Pokemon p WHERE p.ID_Pokemon =" + id ;      
@@ -116,7 +120,8 @@ public class Consultas {
         return resul ;  
     }
 
-
+    //pre nombre entrenador
+    //devuelve el id del entrenador
     public int EntrenadorId(String n) throws SQLException
     {
         
@@ -131,7 +136,8 @@ public class Consultas {
 
         return resultado ;  
     }
-    
+    //pre id tipo
+    //devuelve el tipo del pokemon por la id del tipo
      public String pokemonTipo(int id) throws SQLException
     {
         
@@ -147,7 +153,8 @@ public class Consultas {
 
         return resultado ;  
     }
-    
+    //pre id entrenador
+     //devuelve el nombre de un entrenador 
     public String Entrenadornombre(int i) throws SQLException
     {
         
@@ -162,8 +169,8 @@ public class Consultas {
         
     }
     
-    
-     
+    //pre nombre de entrenador
+     //devuelve los pokemons que tiene un entrenador
      public  List<Map<String, String>>  PokemonNmobreEntrenador(String nombre) throws SQLException
     {
       
@@ -173,7 +180,8 @@ public class Consultas {
         
         
     }
-     
+    //pre id entrenador
+     //devuelve las id de los pokemones de cada entrenador
       public  List<Map<String, String>>  PokemonIDEntrenador(int id) throws SQLException
     {
       
@@ -181,7 +189,8 @@ public class Consultas {
         List<Map<String, String>> resul = lista(sentencia);
         return resul ;   
     }
-     
+     //pre nombre tipo
+      //devuelve la id del tipo 
     public  int  TipoID(String nombre) throws SQLException
     {
       
@@ -195,6 +204,8 @@ public class Consultas {
         return resultado;
   
     }
+    //pre id entrenador
+    //devuelve la cantidad de pokemones que tiene un entrenador
       public  int  CantidadPokemon(int id) throws SQLException
     {
       

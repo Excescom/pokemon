@@ -116,6 +116,7 @@ public class EntrenadoresController {
     }
     
     @FXML
+    //vuelve al menñu principal
     private void menu()
         
     {
@@ -143,6 +144,7 @@ public class EntrenadoresController {
     }
   
      @FXML
+     //muestra al entrenador
     private void mostrar(String nombre) throws SQLException
     {
 
@@ -156,6 +158,7 @@ public class EntrenadoresController {
 
     }
      @FXML
+     //te permite seleccionar un entrenador aleatorio
     private void aleatorio() throws SQLException
     {
         int entrenador = (int) (Math.random()*12 + 1);
@@ -195,6 +198,7 @@ public class EntrenadoresController {
     
     
     @FXML
+    //te mueve a seleccionar tu propio equipo
     private void custom()
         
     {
