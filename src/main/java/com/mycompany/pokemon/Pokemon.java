@@ -89,6 +89,11 @@ public class Pokemon {
         return tipo;
     }
     
+    public double[][] getTabla()
+    {
+        return tablaT;
+    }
+    
     public double getVida()
     {
         return vida;
@@ -150,7 +155,7 @@ public class Pokemon {
     }
     
     //se crea la tabla de tipos 
-    private double[][] TablaTipos()
+    public double[][] TablaTipos()
     {
         double[][] tabla = new double [18][18];
         for( int i=0;i<18;i++)

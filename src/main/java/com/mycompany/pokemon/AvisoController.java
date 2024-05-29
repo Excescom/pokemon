@@ -66,7 +66,8 @@ public class AvisoController {
         
     }
     @FXML
-    //te saca a la base de datos para poder cambiar cosas
+    //te saca a la base de datos para poder cambiar cosas    //te saca a la base de datos para poder cambiar cosas
+
     private void salir()
         
     {

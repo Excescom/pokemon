@@ -128,6 +128,34 @@ public class PokedexController {
             } catch (IOException e) {}
         
     }
+    
+    @FXML
+    //vuelves al menú
+    private void calculadora()
+        
+    {
+        try {
+                sin.setLogs("moviendose a calculadora");
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("calculadora.fxml"));
+
+                Scene scene = new Scene(fxmlLoader.load());
+                Stage stage = new Stage();
+                stage.resizableProperty().setValue(false); //sin botón de restaurar/maximiza
+                stage.setTitle("calculadora");
+                sin.setLogs("moviendose a calculadora");
+                stage.setScene(scene);
+                stage.show();
+
+                //cerramos la ventana actual buscando su referencia a través de algún 
+                //control 
+                Stage stageAcerrar = (Stage) botonMenu.getScene().getWindow();
+
+                stageAcerrar.close();
+
+            } catch (IOException e) {}
+        
+    }
     @FXML
     //muestra el pokemon seleccionado
     private void mostrar() throws SQLException

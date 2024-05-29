@@ -4,6 +4,7 @@ com\mycompany\pokemon\Singleton.class
 com\mycompany\pokemon\EntrenadorCustomController$1.class
 com\mycompany\pokemon\FinPartidaController.class
 com\mycompany\pokemon\EntrenadorCustomController$6.class
+com\mycompany\pokemon\ClaculadoraController.class
 com\mycompany\pokemon\NormasController.class
 com\mycompany\pokemon\Consultas.class
 module-info.class

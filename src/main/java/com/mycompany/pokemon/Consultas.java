@@ -119,6 +119,8 @@ public class Consultas {
         List<Map<String, String>> resul = lista(sentencia);
         return resul ;  
     }
+    
+    
 
     //pre nombre entrenador
     //devuelve el id del entrenador
@@ -220,6 +222,21 @@ public class Consultas {
   
     }
 
+      
+      public Double media() throws SQLException
+    {
+        
+        Connection con;
+        con= DriverManager.getConnection(sin.getDatabase(),sin.getUsuario(),sin.getContrasenya());
+        ResultSet resul = con.createStatement().executeQuery("SELECT AVG(Badges) AS Media_Badges FROM Trainers");
+        Double resultado;
+        
+        resul.next();
+        resultado = resul.getDouble("Media_Badges");       
+        con.close();
+
+        return resultado ;  
+    }
     
 }
 

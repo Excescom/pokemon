@@ -39,6 +39,9 @@ public class Singleton
    private int cantidadVivos;
    private int cantidadTotal;
    private int tuxMuertos;
+   private double constante;
+   private double b;
+   private double e;
    
    //se inicializan los datos necesarios
    void Singelton()
